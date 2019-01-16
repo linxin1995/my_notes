@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-bind:class="{'app':true}">
     <vue-todo></vue-todo>
     <div>
     <hr>
@@ -51,5 +51,7 @@ export default {
    color: red;
    background: black;
  }
-
+.app{
+  background: cornflowerblue;
+}
 </style>
